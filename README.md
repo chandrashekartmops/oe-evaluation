@@ -12,7 +12,9 @@ Install the required dependencies by running pip install boto3 in your terminal.
 Configure your AWS credentials using one of the following methods:
 
 **AWS CLI:** Run aws configure in your terminal and follow the prompts to enter your Access Key ID, Secret Access Key, default region, and output format.
+
 **Environment Variables:** Set the AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, and AWS_DEFAULT_REGION environment variables in your shell.
+
 **IAM Role:** Ensure that your IAM role has the necessary permissions to access the AWS resources you want to list.
 
 **Running the Script:**
