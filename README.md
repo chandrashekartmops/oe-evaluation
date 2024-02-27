@@ -17,6 +17,16 @@ Configure your AWS credentials using one of the following methods:
 **Running the Script:**
 python3 /Users/chandrashekar/Downloads/oe.py <SERVICE_NAME> <REGION>
 
-**Example below :**
-python3 /Path/To/oe.py rds us-east-1
+**How the script Works**
+1. The script makes use of the above tools installed such as python3, boto3 etc
+2. It takes in the below 2 parameters such as "service_name" and "region"
+3. It internally initiates a session and creates a client via boto to connect with the desired profile (in our case the default profile we setup initially)
+4. It makes use of mapping as every service within AWS has a different resource calling method/type.
+5. We make use of pagniation as few resource listing limits to a certain number.
+6. We handle errors as well, which are caught at times when wrong service_name or regions are provided as part of the parameter input while we run the script.
+7. Finally we can see the below example on how the script runs and gives us the desire o/p's. Screenshots are shared for reference. 
 
+**Example below :**
+
+For RDS : python3 /Path/To/oe.py rds us-east-1
+For EC2 : python3 /Path/To/oe.py ec2 us-east-1
