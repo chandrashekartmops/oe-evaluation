@@ -1,0 +1,24 @@
+Part 1 of Q3
+Create VPC: Create a VPC with a CIDR block. This will be the network in which your resources will reside.
+
+Subnets: Divide the VPC into subnets across Availability Zones (AZs) for high availability. One subnet should be public, where you deploy resources accessible from the internet, and one private subnet for resources that shouldn't be directly accessible.
+
+Internet Gateway (IGW): Attach an Internet Gateway to the VPC to enable internet access for resources in the public subnet.
+
+Route Tables: Create route tables for your subnets. Associate the public subnet with a route table that routes traffic to the Internet Gateway. For the private subnet, route traffic to a NAT Gateway for outbound internet access.
+
+Security Groups: Configure security groups to control inbound and outbound traffic to your instances.
+
+
+Deploy Resources: Finally, deploy your web application resources into the appropriate subnets with associated security groups.
+
+
+
+
+
+
+Part 2 of Q3
+
+Inbound Traffic: Use Security Groups to allow only necessary incoming traffic to your EC2 instance,  Restrict access to specific IP ranges if possible.
+
+Outbound Traffic: Control outbound traffic from your EC2 instance using Security Groups to allow only required protocols and destinations. 

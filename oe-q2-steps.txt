@@ -1,0 +1,16 @@
+Login to console 
+Options + s to get the search 
+hit ec2
+I created a security group to allow HTTP and HTTPS traffic for IPV4 and IPV6 from anywhere and I allowed the ssh to happen from my IP only I named this "oe-sg"
+region was stockholm, didn't change it
+top right corner had launch instance
+gave the name oe-test
+selected the latest AMI : Amazon Linux 2023 AMI 2023.3.20240219.0 x86_64 HVM kernel-6.1
+Unfortunately they've stopped the t2micro Instance type and they have included the t3micro into the free tier (took some liberty and selected that itself.)
+Created an RSA pem file and downloaded it to the downloads folder where I changed its permissions using chmod400
+I selected my oe-sg from step 4
+I didn't need any additional setup so I left the launch template empty
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
