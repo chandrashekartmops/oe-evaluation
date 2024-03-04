@@ -1,0 +1,13 @@
+#Steps to launch EC2 via terraform 
+##After configuring the AWS CLI
+1. Create a new Directory for the terraform code. 
+2. cd into that directory that was created. 
+3. Start coding the main.tf 
+4. Specify the provider for terraform (aws) in the terraform block
+5. Specify the profile name and the region in the provider block
+6. Specify the resource block to define components of the resource.
+7. I have used the security group and the key pair that was created initially for this task itself, I've specified it in the resource block of the code. 
+
+
+
+Please find the new screenshots that have been uploaded for this, the security groups are the same as before, those screenshots are already present. 
