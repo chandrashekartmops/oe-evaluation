@@ -1,5 +1,5 @@
-#Steps to launch EC2 via terraform 
-##After configuring the AWS CLI
+------- Steps to launch EC2 via terraform -------
+After configuring the AWS CLI
 1. Create a new Directory for the terraform code. 
 2. cd into that directory that was created. 
 3. Start coding the main.tf 
