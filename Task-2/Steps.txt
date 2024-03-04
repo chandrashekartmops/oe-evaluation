@@ -1,1 +1,16 @@
- 
+Steps to create EC2 instance with terraform 
+1. Configure the AWS CLI 
+2. Create a directory and cd into that directory
+3. Terraform Block contains providers and is found in providers.tf; we currently have aws and terraform defined for our usecase 
+4. Resources block define components of your infrastructure and is found in the main.tf
+5. The variables are defined with the help of terraform.tfvars and variables.tf; this allows us to make changes to our configuration efficiently.
+6. The state lock files are handled locally for now, they could be stored in a backend like S3.
+7. The security group and the key pair are being reused, please find the screenshots in the screenshots folder; it has the necessary details of the securtiy group.
+8. Following all this, we run "terraform init" to initialize the directory
+9. We then run "terraform plan" to plan the changes
+10. We validate our plan with "terraform validate" 
+11. Finally we apply our changes with "terraform apply" 
+
+
+
+Please find the relevant screenshots for this task in the screenshot folder, I've uploaded them with respect to the changes of this task. 
